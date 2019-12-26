@@ -8,14 +8,13 @@ import Blog from './Blog';
 import Projects from './Projects';
 import Links from './Links';
 import Logo from './Logo';
-import Carousel from './Carousel';
+
 
 function App() {
   return (
     <div className="container">
       <Logo />
       <Header />
-      <Carousel />
       <About />
       <Skills />
       <Projects />

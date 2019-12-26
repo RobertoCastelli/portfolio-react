@@ -1,31 +1,73 @@
 body {
-  font-family: monospace;
+  font-family: Helvetica, sans-serif;;
   background-image: url('./img/bgReact.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: bisque;
+  letter-spacing: 1px;
+  
 }
 
-button {
-  border-radius: 0.12em;
-  box-shadow: inset ;
+button {  
+  height: 3em;
+  background-color: transparent;
+  color: bisque;
+  border-radius: 0.20em;
+  border: 2px solid bisque;
+  outline: none;
 }
 
+h1 {
+  color: #61dae2;
+}
+
+span {
+  font-weight: bold;
+  font-size: 15px
+}
+
+.logo-image {
+  border-radius: 50%;
+  border: 8px solid #292F30;
+  padding: 10px;
+  width: 100px;
+}
+
+/* # SECTIONS */
 .container {
-  margin: 5%;
+  margin:  5% auto;
+  max-width: 700px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 15px;
+  row-gap: 15px;
   grid-template-areas: 
   "logo logo"
   "header header"
   "carousel carousel"
   "about skills"
-  "projects blog"
-  "links links"
+  "links blog"
+  "projects projects"
+  "thumbs thumbs"
   "footer footer";
+}
+
+@media (max-width: 510px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "logo"
+    "header"
+    "carousel"
+    "about" 
+    "skills"
+    "links" 
+    "blog"
+    "projects"
+    "project-thumbs"
+    "footer";
+  }
 }
 
 .logo {
@@ -35,11 +77,6 @@ button {
 
 .header {
   grid-area: header;
-  text-align: center;
-}
-
-.carousel {
-  grid-area: carousel;
   text-align: center;
 }
 
@@ -55,18 +92,70 @@ button {
   grid-area: projects;
 }
 
+.project-thumbs {
+  grid-area: card;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .blog {
   grid-area: blog;
 }
 
 .links {
   grid-area: links;
-  text-align: center;
 }
 
 .footer {
   grid-area: footer;
   text-align: center;
 }
+/* END # SECTIONS */
+
+/* SKILLS */
+.js {
+  background-color: rgb(234, 214, 62, 0.2);
+  border-left: 6px solid rgb(234, 214, 62);
+  padding: 5px;
+}
+.react {
+  background-color:  rgb(65, 184, 130, 0.2);
+  border-left: 6px solid rgb(65, 184, 130);
+  padding: 5px;
+}
+.node {
+  background-color: rgb(67, 132, 60, 0.2);
+  border-left: 6px solid rgb(67, 132, 60);
+  padding: 5px;
+}
+.bootstrap {
+  background-color: rgb(85, 61, 123, 0.2);
+  border-left: 6px solid rgb(85, 61, 123);
+  padding: 5px;
+}
+.github {
+  background-color: rgb(244, 67, 54, 0.2); ;
+  border-left: 6px solid rgb(244, 67, 54);
+  padding: 5px;
+}
+/* END SKILLS */
 
 
+/* CARDS */
+.card {
+  text-align: center;
+  width: 150px;
+  margin: 15px 10px;
+}
+
+.card-description {
+  border: 1px solid bisque;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+/* END CARDS */
