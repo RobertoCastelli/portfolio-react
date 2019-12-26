@@ -1,4 +1,72 @@
 body {
   font-family: monospace;
+  background-image: url('./img/bgReact.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: bisque;
 }
+
+button {
+  border-radius: 0.12em;
+  box-shadow: inset ;
+}
+
+.container {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-areas: 
+  "logo logo"
+  "header header"
+  "carousel carousel"
+  "about skills"
+  "projects blog"
+  "links links"
+  "footer footer";
+}
+
+.logo {
+  grid-area: logo;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.carousel {
+  grid-area: carousel;
+  text-align: center;
+}
+
+.about {
+  grid-area: about;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.blog {
+  grid-area: blog;
+}
+
+.links {
+  grid-area: links;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
+
 

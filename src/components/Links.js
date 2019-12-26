@@ -2,7 +2,7 @@ import React from 'react'
 
 function Links() {
     return (
-        <div>
+        <div className="links">
             <i>Home</i>
             <i>Linkedin</i>
             <i>Github</i>

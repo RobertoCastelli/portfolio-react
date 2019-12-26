@@ -2,7 +2,7 @@ import React from 'react'
 
 function Projects() {
     return (
-        <div>
+        <div className="projects">
             <h1># PROJECTS</h1>
             <p>NIGHT RUN (rpg game)</p>
             <p>TO VUE LIST (using VUE)</p>
@@ -26,4 +26,4 @@ function Projects() {
     )
 }
 
-export default  Projects
+export default Projects

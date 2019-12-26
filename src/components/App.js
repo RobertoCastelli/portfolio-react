@@ -1,4 +1,5 @@
 import React from 'react';
+
 import About from './About';
 import Header from './Header';
 import Footer from './Footer';
@@ -11,7 +12,7 @@ import Carousel from './Carousel';
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Logo />
       <Header />
       <Carousel />

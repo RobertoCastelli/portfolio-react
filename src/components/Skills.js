@@ -2,7 +2,7 @@ import React from 'react'
 
 function Skills() {
     return (
-        <div>
+        <div className="skills">
             <h1># MASTERING</h1>
             <p>Javascript (HTML/CSS) - a high-level, interpreted scripting language</p>
             <p>React + Vue - an ecosystem that scales between a library and a framework</p>
