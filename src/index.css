@@ -49,7 +49,6 @@ span {
   "about skills"
   "links blog"
   "projects projects"
-  "thumbs thumbs"
   "footer footer";
 }
 
@@ -65,7 +64,6 @@ span {
     "links" 
     "blog"
     "projects"
-    "project-thumbs"
     "footer";
   }
 }
@@ -90,12 +88,6 @@ span {
 
 .projects {
   grid-area: projects;
-}
-
-.project-thumbs {
-  grid-area: card;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .blog {
@@ -143,19 +135,26 @@ span {
 
 /* CARDS */
 .card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-description {
   text-align: center;
   width: 150px;
   margin: 15px 10px;
-}
-
-.card-description {
   border: 1px solid bisque;
-  border-radius: 5px;
-  padding: 10px 0;
+  cursor: pointer;
 }
 
-.card-buttons {
-  display: flex;
-  justify-content: space-around;
+.card-description:hover {
+  background-image: none !important;
+  color: #61dae2;
 }
+
+.card-image {
+  width: 100%;
+  
+}
+
+
 /* END CARDS */
