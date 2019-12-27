@@ -12,7 +12,7 @@ import Logo from './Logo';
 
 function App() {
   return (
-    <div className="container">
+    <div id="container" className="container">
       <Logo />
       <Header />
       <About />

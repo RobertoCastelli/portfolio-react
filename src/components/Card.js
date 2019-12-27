@@ -24,84 +24,104 @@ function Card() {
     let projectList =
         [{
             title: 'NIGHT RUN',
-            tech: 'js, setTimeout',
-            image: nightrun
+            tech: 'vanilla JS',
+            image: nightrun,
+            link: 'https://to-night-run.netlify.com/'
         }, {
             title: 'TO DO LIST',
             tech: 'vue',
-            image: todolist
+            image: todolist,
+            link: 'https://to-vue-list.netlify.com/'
         }, {
-            title: 'POKEDEX',
+            title: 'POKEDEX JS',
             tech: 'API',
-            image: pokedex
+            image: pokedex,
+            link: 'https://to-pokedex.netlify.com/'
         }, {
             title: 'ADVICE SLIP',
             tech: 'API',
-            image: advice
+            image: advice,
+            link: 'https://to-advice.netlify.com/'
         }, {
             title: 'WEATHER APP',
             tech: 'API',
-            image: weather
+            image: weather,
+            link: 'https://to-weather.netlify.com/'
         }, {
-            title: 'MEME',
-            tech: 'react hooks, API',
-            image: meme
+            title: 'CREATE MEME',
+            tech: 'react, API',
+            image: meme,
+            link: 'https://to-meme.netlify.com/'
         }, {
             title: 'WEATHER APP',
-            tech: 'react hooks, API',
-            image: weather_react
+            tech: 'react, API',
+            image: weather_react,
+            link: 'https://to-weather-react.netlify.com/'
         }, {
             title: 'READING LIST',
-            tech: 'react, useContext',
-            image: books
+            tech: 'react',
+            image: books,
+            link: 'https://to-books.netlify.com/'
         }, {
-            title: 'POST-IT',
+            title: 'POST-IT JS',
             tech: 'vue, database',
-            image: postit
+            image: postit,
+            link: 'https://vue-it-fire.web.app/#/'
         }, {
             title: 'BUDGET BUDDY',
-            tech: 'localStorage',
-            image: budget
+            tech: 'local storage',
+            image: budget,
+            link: 'https://to-budget.netlify.com/'
         }, {
             title: 'ROCK PAPER',
-            tech: 'js, css animation',
-            image: rock
+            tech: 'css animation',
+            image: rock,
+            link: 'https://to-rock.netlify.com/'
         }, {
-            title: 'POMODORO',
-            tech: 'js, setInterval',
-            image: pomodoro
+            title: 'POMO CLOCK',
+            tech: 'setInterval',
+            image: pomodoro,
+            link: 'https://to-pomodoro.netlify.com/'
         }, {
-            title: 'FIX-IT',
-            tech: 'js, audio',
+            title: 'COUNT DOWN',
+            tech: 'setInterval',
+            image: countdown,
+            link: 'https://to-countdown.netlify.com/'
+        }, {
+            title: 'GO FIX IT APP',
+            tech: 'audio',
             image: fixit,
-        }, {
-            title: 'QUIZ GAME',
-            tech: 'vanilla js',
-            image: quiz,
+            link: 'https://to-naajeni.netlify.com/'
         }, {
             title: 'DRUM MACHINE',
-            tech: 'audio, binding',
-            image: drum
+            tech: 'audio',
+            image: drum,
+            link: 'https://to-drum-machine.netlify.com/'
         }, {
-            title: 'COUNTDOWN',
-            tech: 'js, setInterval',
-            image: countdown
+            title: 'QUIZ GAME',
+            tech: 'vanilla JS',
+            image: quiz,
+            link: 'https://to-quiz.netlify.com/'
         }, {
             title: 'GAME OF LIFE',
-            tech: 'js, canvas',
-            image: gol
+            tech: 'canvas',
+            image: gol,
+            link: 'https://to-game-of-life.netlify.com/'
         }, {
             title: 'SIMPLE PAINT',
-            tech: 'js, canvas',
-            image: paint
+            tech: 'canvas',
+            image: paint,
+            link: 'https://to-paint.netlify.com/'
         }]
 
     let projectCard = projectList.map(card => {
         return (
             <div className="card-description">
-                <img className="card-image" src={card.image} alt="card" />
-                <h4>{card.title}</h4>
-                <p>{card.tech}</p>
+                <a href={card.link} target="_blank" rel="noopener noreferrer" >
+                    <img className="card-image" src={card.image} alt="card" />
+                    <h4>{card.title}</h4>
+                    <p>{card.tech}</p>
+                </a>
             </div>
         )
     });

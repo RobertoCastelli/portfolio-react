@@ -5,26 +5,15 @@ body {
   background-size: cover;
   color: bisque;
   letter-spacing: 1px;
-  
 }
 
 button {  
   height: 3em;
   background-color: transparent;
-  color: bisque;
+  color: bisque ;
   border-radius: 0.20em;
-  border: none;
-  border-bottom: 2px solid bisque;
   outline: none;
   font-weight: bold;
-}
-
-button:hover {
-  background-color: rgb(96, 217, 226);
-  color: #292F30;
-  border: 2px solid #292F30;
-  transition: 0.5s ease;
-  
 }
 
 h1 {
@@ -36,6 +25,12 @@ span {
   font-size: 15px
 }
 
+/* LOGO & BUTTONS */
+.blog-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
 .logo-image {
   border-radius: 50%;
   border: 8px solid #292F30;
@@ -43,17 +38,27 @@ span {
   width: 100px;
 }
 
+.logo-react {
+  width: 50px;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+a{
+  all: unset;
+}
+
 .links p:hover {
   color: #61dae2;
   cursor: pointer;
-  transform: translateX(3px);
+  transform: translateX(5px);
   transition: 0.5s ease;
 }
-
-.blog-buttons {
-  display: flex;
-  justify-content: space-around;
-}
+/* END LOGO & BUTTONS */
 
 /* # SECTIONS */
 .container {
@@ -162,18 +167,21 @@ span {
 }
 .card-description {
   text-align: center;
-  width: 150px;
+  font-size: 1em;
+  width: 93px;
   margin: 15px 10px;
   border: 1px solid bisque;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
-.card-description:hover {
+.card-description:hover,
+button:hover {
   background-image: none !important;
   color: rgb(96, 217, 226);
   opacity: 1;
   transition: 0.5s ease;
+  box-shadow: 0px 0px 30px -15px rgba(255,228,196,1);
 }
 
 .card-image {
