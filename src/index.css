@@ -13,8 +13,18 @@ button {
   background-color: transparent;
   color: bisque;
   border-radius: 0.20em;
-  border: 2px solid bisque;
+  border: none;
+  border-bottom: 2px solid bisque;
   outline: none;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(96, 217, 226);
+  color: #292F30;
+  border: 2px solid #292F30;
+  transition: 0.5s ease;
+  
 }
 
 h1 {
@@ -31,6 +41,18 @@ span {
   border: 8px solid #292F30;
   padding: 10px;
   width: 100px;
+}
+
+.links p:hover {
+  color: #61dae2;
+  cursor: pointer;
+  transform: translateX(3px);
+  transition: 0.5s ease;
+}
+
+.blog-buttons {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* # SECTIONS */
@@ -144,17 +166,17 @@ span {
   margin: 15px 10px;
   border: 1px solid bisque;
   cursor: pointer;
+  opacity: 0.7;
 }
 
 .card-description:hover {
   background-image: none !important;
-  color: #61dae2;
+  color: rgb(96, 217, 226);
+  opacity: 1;
+  transition: 0.5s ease;
 }
 
 .card-image {
   width: 100%;
-  
 }
-
-
 /* END CARDS */
