@@ -17,6 +17,7 @@ import quiz from '../img/bgquiz.jpg'
 import drum from '../img/bgdrum.jpg'
 import countdown from '../img/bgcountdown.jpg'
 import gol from '../img/bggame.png'
+import metronomo from '../img/bgmetro.png'
 import paint from '../img/bgpaintalt.jpg'
 
 function Card() {
@@ -62,6 +63,11 @@ function Card() {
             tech: 'react',
             image: books,
             link: 'https://to-books.netlify.com/'
+        }, {
+            title: 'METRO NOMO',
+            tech: 'react',
+            image: metronomo,
+            link: 'https://to-metronome.netlify.com'
         }, {
             title: 'POST-IT JS',
             tech: 'vue, database',
