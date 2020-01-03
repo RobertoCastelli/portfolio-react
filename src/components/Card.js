@@ -19,6 +19,7 @@ import countdown from '../img/bgcountdown.jpg'
 import gol from '../img/bggame.png'
 import metronomo from '../img/bgmetro.png'
 import paint from '../img/bgpaintalt.jpg'
+import portfolio from '../img/bgportfolio.jpg'
 
 function Card() {
 
@@ -108,6 +109,11 @@ function Card() {
             tech: 'vanilla JS',
             image: quiz,
             link: 'https://to-quiz.netlify.com/'
+        }, {
+            title: 'PORT FOLIO',
+            tech: 'vanilla JS',
+            image: portfolio,
+            link: 'https://to-portfolio.netlify.com/'
         }, {
             title: 'GAME OF LIFE',
             tech: 'canvas',
