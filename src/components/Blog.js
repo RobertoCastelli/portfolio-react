@@ -3,7 +3,7 @@ import React from 'react'
 function Blog() {
 
     const blog = "https://www.robertocastelli.dev/"
-    const lastArticle = "https://www.robertocastelli.dev/2019/12/010-time-to-react.html"
+    const lastArticle = "https://www.robertocastelli.dev/2020/01/012-free-code-camp.html"
 
     return (
         <div className="blog">
