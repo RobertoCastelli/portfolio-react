@@ -54,7 +54,7 @@ function Card() {
             title: '8-BALL QUEST',
             tech: 'API',
             image: eightball,
-            link: 'https://to-eightball.netlify.com/'
+            link: 'https://to-eight.netlify.com/'
         }, {
             title: 'CREATE MEME',
             tech: 'react, API',
