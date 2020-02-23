@@ -20,6 +20,7 @@ import gol from '../img/bggame.png'
 import metronomo from '../img/bgmetro.png'
 import paint from '../img/bgpaintalt.jpg'
 import portfolio from '../img/bgportfolio.jpg'
+import eightball from '../img/bgeightball.jpg'
 
 function Card() {
 
@@ -49,6 +50,11 @@ function Card() {
             tech: 'API',
             image: weather,
             link: 'https://to-weather.netlify.com/'
+        }, {
+            title: '8-BALL QUEST',
+            tech: 'API',
+            image: eightball,
+            link: 'https://to-eightball.netlify.com/'
         }, {
             title: 'CREATE MEME',
             tech: 'react, API',
