@@ -140,7 +140,7 @@ function Card() {
       link: "https://to-portfolio.netlify.com/",
     },
     {
-      title: "ALGORYTHMS 1°",
+      title: "ALGORYTHMS ADVANCED",
       tech: "vanilla JS",
       image: advanced,
       link: "https://to-fcc-advanced.netlify.com/",
