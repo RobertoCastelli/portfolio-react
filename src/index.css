@@ -1,17 +1,17 @@
 body {
-  font-family: Helvetica, sans-serif;;
-  background-image: url('./img/bgReact.png');
+  font-family: Helvetica, sans-serif;
+  background-image: url("./img/bgReact.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: bisque;
   letter-spacing: 1px;
 }
 
-button {  
+button {
   height: 3em;
   background-color: transparent;
-  color: bisque ;
-  border-radius: 0.20em;
+  color: bisque;
+  border-radius: 0.2em;
   outline: none;
   font-weight: bold;
 }
@@ -22,7 +22,7 @@ h1 {
 
 span {
   font-weight: bold;
-  font-size: 15px
+  font-size: 15px;
 }
 
 /* LOGO & BUTTONS */
@@ -33,7 +33,7 @@ span {
 
 .logo-image {
   border-radius: 50%;
-  border: 8px solid #292F30;
+  border: 8px solid #292f30;
   padding: 10px;
   width: 100px;
 }
@@ -44,11 +44,15 @@ span {
 }
 
 @keyframes spin {
-  0%{transform: rotate(0deg);}
-  100%{transform: rotate(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-a{
+a {
   all: unset;
 }
 
@@ -62,36 +66,36 @@ a{
 
 /* # SECTIONS */
 .container {
-  margin:  5% auto;
+  margin: 5% auto;
   max-width: 700px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   column-gap: 15px;
   row-gap: 15px;
-  grid-template-areas: 
-  "logo logo"
-  "header header"
-  "carousel carousel"
-  "about skills"
-  "links blog"
-  "projects projects"
-  "footer footer";
+  grid-template-areas:
+    "logo logo"
+    "header header"
+    "carousel carousel"
+    "about skills"
+    "links blog"
+    "projects projects"
+    "footer footer";
 }
 
 @media (max-width: 510px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "logo"
-    "header"
-    "carousel"
-    "about" 
-    "skills"
-    "links" 
-    "blog"
-    "projects"
-    "footer";
+    grid-template-areas:
+      "logo"
+      "header"
+      "carousel"
+      "about"
+      "skills"
+      "links"
+      "blog"
+      "projects"
+      "footer";
   }
 }
 
@@ -138,7 +142,7 @@ a{
   padding: 5px;
 }
 .react {
-  background-color:  rgb(65, 184, 130, 0.2);
+  background-color: rgb(65, 184, 130, 0.2);
   border-left: 6px solid rgb(65, 184, 130);
   padding: 5px;
 }
@@ -153,12 +157,11 @@ a{
   padding: 5px;
 }
 .github {
-  background-color: rgb(244, 67, 54, 0.2); ;
+  background-color: rgb(244, 67, 54, 0.2);
   border-left: 6px solid rgb(244, 67, 54);
   padding: 5px;
 }
 /* END SKILLS */
-
 
 /* CARDS */
 .card {
@@ -168,7 +171,7 @@ a{
 .card-description {
   text-align: center;
   font-size: 1em;
-  width: 93px;
+  width: 150px;
   margin: 15px 10px;
   border: 1px solid bisque;
   cursor: pointer;
@@ -181,7 +184,7 @@ button:hover {
   color: rgb(96, 217, 226);
   opacity: 1;
   transition: 0.5s ease;
-  box-shadow: 0px 0px 30px -15px rgba(255,228,196,1);
+  box-shadow: 0px 0px 30px -15px rgba(255, 228, 196, 1);
 }
 
 .card-image {
