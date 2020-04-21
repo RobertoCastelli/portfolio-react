@@ -80,7 +80,7 @@ function Card() {
       link: "https://to-books.netlify.com/",
     },
     {
-      title: "METRO NOMO",
+      title: "METRONOMO",
       tech: "react",
       image: metronomo,
       link: "https://to-metronome.netlify.com",
@@ -110,7 +110,7 @@ function Card() {
       link: "https://to-pomodoro.netlify.com/",
     },
     {
-      title: "COUNT DOWN",
+      title: "COUNTDOWN",
       tech: "setInterval",
       image: countdown,
       link: "https://to-countdown.netlify.com/",
@@ -134,7 +134,7 @@ function Card() {
       link: "https://to-quiz.netlify.com/",
     },
     {
-      title: "PORT FOLIO",
+      title: "PORTFOLIO",
       tech: "vanilla JS",
       image: portfolio,
       link: "https://to-portfolio.netlify.com/",
