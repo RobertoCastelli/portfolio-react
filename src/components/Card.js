@@ -24,7 +24,10 @@ import countdown from "../img/bgcountdown.jpg";
 import gol from "../img/bggame.png";
 import paint from "../img/bgpaintalt.jpg";
 
-function Card() {
+
+
+function Card(props) {
+ 
   let projectList = [
     {
       title: "NIGHT RUN",
@@ -166,9 +169,9 @@ function Card() {
     },
   ];
 
-  let projectCard = projectList.map((card) => {
+  let projectCard = projectList.map((card, id) => {
     return (
-      <div className="card-description">
+      <div key={id} className="card-description">
         <a href={card.link} target="_blank" rel="noopener noreferrer">
           <img className="card-image" src={card.image} alt="card" />
           <h4>{card.title}</h4>
@@ -178,7 +181,12 @@ function Card() {
     );
   });
 
-  return <div className="card">{projectCard}</div>;
+  const handleClick = () => props.onChildClick(projectList.length)
+  
+  return <div className="card">
+            {projectCard}
+            {handleClick()}
+         </div>;
 }
 
 export default Card;
