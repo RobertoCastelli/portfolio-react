@@ -5,6 +5,7 @@ import todolist from "../img/bgtodo.jpg";
 import pokedex from "../img/bgpoke.jpg";
 import advice from "../img/bgadvice.jpg";
 import weather_react from "../img/bgweather.jpg";
+import tech_news from "../img/bgnews.jpg";
 import eightball from "../img/bgeightball.jpg";
 import meme from "../img/bgmeme.jpg";
 import weather from "../img/bgweather2.jpg";
@@ -72,6 +73,12 @@ function Card() {
       tech: "react, API",
       image: weather_react,
       link: "https://to-weather-react.netlify.com/",
+    },
+    {
+      title: "TECH NEWS",
+      tech: "react, API",
+      image: tech_news,
+      link: "https://to-news.netlify.com/",
     },
     {
       title: "READING LIST",
