@@ -6,6 +6,7 @@ body {
   color: bisque;
   letter-spacing: 1px;
   line-height: 20px;
+
 }
 
 button {
@@ -67,7 +68,7 @@ a {
 
 /* # SECTIONS */
 .container {
-  margin: 5% auto;
+  margin: auto;
   max-width: 768px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
