@@ -9,7 +9,6 @@ import Projects from './Projects';
 import Links from './Links';
 import Logo from './Logo';
 
-
 function App() {
   return (
     <div id="container" className="container">
@@ -17,9 +16,9 @@ function App() {
       <Header />
       <About />
       <Skills />
-      <Projects />
       <Blog />
       <Links />
+      <Projects />
       <Footer />
     </div>
   );

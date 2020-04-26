@@ -5,6 +5,7 @@ body {
   background-size: cover;
   color: bisque;
   letter-spacing: 1px;
+  line-height: 20px;
 }
 
 button {
@@ -17,7 +18,7 @@ button {
 }
 
 h1 {
-  color: #61dae2;
+  color: cadetblue;
 }
 
 span {
@@ -67,7 +68,7 @@ a {
 /* # SECTIONS */
 .container {
   margin: 5% auto;
-  max-width: 700px;
+  max-width: 768px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -79,24 +80,9 @@ a {
     "carousel carousel"
     "about skills"
     "links blog"
+    "featured featured"
     "projects projects"
     "footer footer";
-}
-
-@media (max-width: 510px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "logo"
-      "header"
-      "carousel"
-      "about"
-      "skills"
-      "links"
-      "blog"
-      "projects"
-      "footer";
-  }
 }
 
 .logo {
@@ -115,6 +101,13 @@ a {
 
 .skills {
   grid-area: skills;
+}
+
+.featured {
+  grid-area: featured;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .projects {
@@ -168,26 +161,73 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
+
 .card-description {
   text-align: center;
   font-size: 1em;
   width: 150px;
   margin: 15px 10px;
   border: 1px solid bisque;
-  cursor: pointer;
   opacity: 0.6;
 }
 
-.card-description:hover,
+.card-description:hover, 
 button:hover {
   background-image: none !important;
   color: rgb(96, 217, 226);
   opacity: 1;
   transition: 0.5s ease;
   box-shadow: 0px 0px 30px -15px rgba(255, 228, 196, 1);
+  cursor: pointer;
 }
 
 .card-image {
   width: 100%;
 }
 /* END CARDS */
+
+/* FEATURED */
+.featured-image {
+  border-radius: 50%;
+  transition: 0.5s ease;
+  width: 50%;  
+}
+
+.featured-image:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.featured-image-wrap {
+  text-align: center;
+}
+/* END-FEATURED */
+
+/* MEDIA */
+@media (max-width: 510px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "header"
+      "carousel"
+      "about"
+      "skills"
+      "links"
+      "blog"
+      "featured"
+      "projects"
+      "footer";
+  }
+  .featured {
+    grid-area: featured;
+    display: block;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+/* END-MEDIA */
