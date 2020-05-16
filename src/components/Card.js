@@ -20,14 +20,12 @@ import drum from "../img/bgdrum.jpg";
 import quiz from "../img/bgquiz.jpg";
 import portfolio from "../img/bgportfolio.jpg";
 import advanced from "../img/bgadvanced.png";
+import warehouse from "../img/bgwarehouse.png";
 import countdown from "../img/bgcountdown.jpg";
 import gol from "../img/bggame.png";
 import paint from "../img/bgpaintalt.jpg";
 
-
-
 function Card(props) {
- 
   let projectList = [
     {
       title: "NIGHT RUN",
@@ -156,6 +154,12 @@ function Card(props) {
       link: "https://to-fcc-advanced.netlify.com/",
     },
     {
+      title: "WAREHOUSE",
+      tech: "vanilla JS",
+      image: warehouse,
+      link: "https://to-instock.netlify.com/",
+    },
+    {
       title: "GAME OF LIFE",
       tech: "canvas",
       image: gol,
@@ -181,12 +185,14 @@ function Card(props) {
     );
   });
 
-  const handleClick = () => props.onChildClick(projectList.length)
-  
-  return <div className="card">
-            {projectCard}
-            {handleClick()}
-         </div>;
+  const handleClick = () => props.onChildClick(projectList.length);
+
+  return (
+    <div className="card">
+      {projectCard}
+      {handleClick()}
+    </div>
+  );
 }
 
 export default Card;

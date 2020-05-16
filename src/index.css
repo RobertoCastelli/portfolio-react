@@ -6,7 +6,6 @@ body {
   color: bisque;
   letter-spacing: 1px;
   line-height: 20px;
-
 }
 
 button {
@@ -145,7 +144,7 @@ a {
   border-left: 6px solid rgb(67, 132, 60);
   padding: 5px;
 }
-.bootstrap {
+.gatsby {
   background-color: rgb(85, 61, 123, 0.2);
   border-left: 6px solid rgb(85, 61, 123);
   padding: 5px;
@@ -172,7 +171,7 @@ a {
   opacity: 0.6;
 }
 
-.card-description:hover, 
+.card-description:hover,
 button:hover {
   background-image: none !important;
   color: rgb(96, 217, 226);
@@ -191,7 +190,7 @@ button:hover {
 .featured-image {
   border-radius: 50%;
   transition: 0.5s ease;
-  width: 50%;  
+  width: 50%;
 }
 
 .featured-image:hover {
@@ -229,6 +228,5 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
   }
-
 }
 /* END-MEDIA */
