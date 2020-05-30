@@ -55,6 +55,7 @@ span {
 
 a {
   all: unset;
+  color: inherit;
 }
 
 .links p:hover {
